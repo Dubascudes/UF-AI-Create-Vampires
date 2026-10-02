@@ -1,0 +1,152 @@
+{
+  "computer-ssh": {
+    "connect_ms": 5.342,
+    "results": [
+      {
+        "upload_bytes": 64,
+        "download_bytes": 64,
+        "samples": 40,
+        "median_ms": 10.398,
+        "p95_ms": 23.601,
+        "min_ms": 6.347,
+        "max_ms": 46.681
+      },
+      {
+        "upload_bytes": 65536,
+        "download_bytes": 65536,
+        "samples": 40,
+        "median_ms": 11.449,
+        "p95_ms": 26.335,
+        "min_ms": 9.045,
+        "max_ms": 50.902
+      },
+      {
+        "upload_bytes": 131072,
+        "download_bytes": 131072,
+        "samples": 40,
+        "median_ms": 19.069499999999998,
+        "p95_ms": 41.658,
+        "min_ms": 15.77,
+        "max_ms": 44.098
+      },
+      {
+        "upload_bytes": 262144,
+        "download_bytes": 262144,
+        "samples": 40,
+        "median_ms": 38.4785,
+        "p95_ms": 56.485,
+        "min_ms": 30.578,
+        "max_ms": 70.685
+      },
+      {
+        "upload_bytes": 524288,
+        "download_bytes": 524288,
+        "samples": 40,
+        "median_ms": 68.682,
+        "p95_ms": 94.275,
+        "min_ms": 61.608,
+        "max_ms": 109.808
+      }
+    ]
+  },
+  "phone-usb": {
+    "connect_ms": 0.722,
+    "results": [
+      {
+        "upload_bytes": 64,
+        "download_bytes": 64,
+        "samples": 40,
+        "median_ms": 9.986,
+        "p95_ms": 23.845,
+        "min_ms": 4.194,
+        "max_ms": 39.548
+      },
+      {
+        "upload_bytes": 65536,
+        "download_bytes": 65536,
+        "samples": 40,
+        "median_ms": 49.741,
+        "p95_ms": 89.651,
+        "min_ms": 12.515,
+        "max_ms": 93.721
+      },
+      {
+        "upload_bytes": 131072,
+        "download_bytes": 131072,
+        "samples": 40,
+        "median_ms": 29.048,
+        "p95_ms": 68.876,
+        "min_ms": 18.145,
+        "max_ms": 97.523
+      },
+      {
+        "upload_bytes": 262144,
+        "download_bytes": 262144,
+        "samples": 40,
+        "median_ms": 51.566,
+        "p95_ms": 86.813,
+        "min_ms": 35.029,
+        "max_ms": 97.174
+      },
+      {
+        "upload_bytes": 524288,
+        "download_bytes": 524288,
+        "samples": 40,
+        "median_ms": 75.6925,
+        "p95_ms": 109.631,
+        "min_ms": 61.321,
+        "max_ms": 135.359
+      }
+    ]
+  },
+  "phone-wifi": {
+    "connect_ms": 113.454,
+    "results": [
+      {
+        "upload_bytes": 64,
+        "download_bytes": 64,
+        "samples": 60,
+        "median_ms": 66.2555,
+        "p95_ms": 219.579,
+        "min_ms": 16.041,
+        "max_ms": 333.96
+      },
+      {
+        "upload_bytes": 65536,
+        "download_bytes": 65536,
+        "samples": 60,
+        "median_ms": 174.49650000000003,
+        "p95_ms": 419.056,
+        "min_ms": 115.345,
+        "max_ms": 444.909
+      },
+      {
+        "upload_bytes": 131072,
+        "download_bytes": 131072,
+        "samples": 60,
+        "median_ms": 246.47899999999998,
+        "p95_ms": 861.953,
+        "min_ms": 176.087,
+        "max_ms": 1109.853
+      },
+      {
+        "upload_bytes": 262144,
+        "download_bytes": 262144,
+        "samples": 60,
+        "median_ms": 473.26800000000003,
+        "p95_ms": 1099.026,
+        "min_ms": 338.338,
+        "max_ms": 1189.299
+      },
+      {
+        "upload_bytes": 524288,
+        "download_bytes": 524288,
+        "samples": 60,
+        "median_ms": 1010.713,
+        "p95_ms": 2390.191,
+        "min_ms": 703.359,
+        "max_ms": 2888.394
+      }
+    ]
+  }
+}

@@ -1,0 +1,12 @@
+name: absent-inpaint
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - pip
+  - numpy
+  - pillow
+  - fastapi
+  - uvicorn
+  - pip:
+      - onnxruntime-gpu==1.22.0

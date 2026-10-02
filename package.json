@@ -1,0 +1,27 @@
+{
+  "name": "gator-create-vanishing-mirror",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "dev:all": "node scripts/dev-all.mjs",
+    "inpaint:serve": "./env/bin/python -m uvicorn server.inpaint:app --host 127.0.0.1 --port 8000",
+    "inpaint:setup": "node scripts/setup-inpaint.mjs",
+    "segment:setup": "bash scripts/setup-yolo.sh",
+    "segment:serve": "yolo-env/bin/python -m uvicorn server.person_segment:app --host 127.0.0.1 --port 8001 --no-access-log --ws-per-message-deflate false",
+    "build": "tsc --noEmit && vite build",
+    "test": "vitest run",
+    "assets": "node scripts/install-assets.mjs",
+    "xr:phone": "adb reverse tcp:5173 tcp:5173"
+  },
+  "dependencies": {
+    "@mediapipe/tasks-vision": "^1.0.1"
+  },
+  "devDependencies": {
+    "@types/webxr": "^0.5.24",
+    "typescript": "5.6.3",
+    "vite": "5.4.20",
+    "vitest": "2.1.9"
+  }
+}

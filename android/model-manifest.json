@@ -1,0 +1,30 @@
+{
+  "release": "v0.1-baseline-20261002",
+  "files": [
+    {
+      "path": "android/app/src/main/assets/yolo26n-seg-288x384.tflite",
+      "bytes": 11187465,
+      "sha256": "6eef4e2f20466a873b85aeaa4a6e939f597a30dfddd39d33012a383707fd4ac8"
+    },
+    {
+      "path": "android/app/src/main/assets/yolo26n-seg-384x672.tflite",
+      "bytes": 11223755,
+      "sha256": "415e322fadff2b738dc3bc71cc3fac87b8bffd7915123b44f0fd9c77bb374ae3"
+    },
+    {
+      "path": "android/app/src/main/assets/yolo26n-seg-480x640.tflite",
+      "bytes": 11235852,
+      "sha256": "1cc526d3e5b7396983bbdcbb8b9bef51481220ddf991368fa9672d2c26de1b4c"
+    },
+    {
+      "path": "models/lama_dilated_places.tflite",
+      "bytes": 183549716,
+      "sha256": "bcbd41938c0af0c3dd67083c515f2a1e61218e0ceea4a66ef203afe3f710ee9d"
+    }
+  ],
+  "provenance": {
+    "yolo": "YOLO26n-seg TFLite exports already used by this app. Upstream: https://github.com/ultralytics/ultralytics . Exact historical export command was not recovered in this migration.",
+    "lama": "LaMa-Dilated Places2 export; see scripts/export-lama-dilated-places.py and https://github.com/advimman/lama .",
+    "license": "Upstream models retain their upstream licenses; this snapshot does not relicense model weights."
+  }
+}

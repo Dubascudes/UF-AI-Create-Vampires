@@ -1,0 +1,43 @@
+{
+  "date": "2026-10-02",
+  "phone": "Samsung SM-S938U (Galaxy S25 Ultra)",
+  "phone_wifi": "eduroam",
+  "phone_awake_during_wifi_test": true,
+  "remote_job": "44469721",
+  "remote_node": "c0709a-s30",
+  "remote_resources": "1 CPU, 1 GiB RAM, 20 minutes; no GPU",
+  "wifi_route": [
+    "phone eduroam 10.138.99.180",
+    "computer eduroam 10.138.224.115:18766",
+    "existing SSH connection to hpg.rc.ufl.edu",
+    "compute node c0709a-s30:18765"
+  ],
+  "usb_route": [
+    "phone localhost:18765",
+    "ADB reverse over USB",
+    "computer localhost:18765",
+    "existing SSH connection to hpg.rc.ufl.edu",
+    "compute node c0709a-s30:18765"
+  ],
+  "protocol": "Persistent TCP with TCP_NODELAY. 8-byte request header specifies upload and response size; server receives full payload then echoes requested bytes. Java System.nanoTime surrounds write/flush/readFully on client. Response contents verified outside timed interval.",
+  "payload": "Deterministic pseudorandom bytes, seed 42. Synthetic sizes; no images captured or transmitted.",
+  "sampling": "5 warmups per size; 40 recorded per size for USB/computer, 60 per size for Wi-Fi. 30 ms idle between requests. Runs sequential; a separate direct-connect reachability check occurred during the Wi-Fi run.",
+  "excluded": [
+    "camera capture",
+    "segmentation",
+    "image encoding and decoding",
+    "model inference",
+    "video buffering",
+    "display rendering",
+    "SSH authentication and initial tunnel setup"
+  ],
+  "direct_compute_eduroam": "TCP connect to 172.16.199.125:18765 timed out after 3 seconds.",
+  "ufguest": "TCP to computer relay and compute node refused; no payload timing obtained. One public HPG SSH TCP connection succeeded in 74.919 ms, not a statistical latency estimate.",
+  "scope": "Results describe these measured routes and this session; no direct phone-to-HPG SSH tunnel was benchmarked.",
+  "cleanup": {
+    "job": "scancel succeeded; last observed state COMPLETING",
+    "ssh_forwards": "Both test forwards removed successfully",
+    "adb_reverse": "Test reverse removed successfully",
+    "phone_probe": "Temporary DEX file removed successfully"
+  }
+}

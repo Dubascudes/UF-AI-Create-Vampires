@@ -1,0 +1,114 @@
+:root {
+  color-scheme: dark;
+  --ink: #eef2ee;
+  --muted: #9aa8a2;
+  --ground: #101716;
+  --accent: #d6ff5c;
+  --bad: #ff7a7a;
+}
+
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+
+body {
+  margin: 0;
+  background: var(--ground);
+  color: var(--ink);
+  font-family: ui-sans-serif, system-ui, sans-serif;
+}
+
+.xr-landing {
+  max-width: 34rem;
+  margin: 0 auto;
+  padding: max(24px, env(safe-area-inset-top)) 16px 32px;
+}
+
+.xr-eyebrow { color: var(--muted); font-size: 0.75rem; letter-spacing: 0.12em; }
+.xr-landing h1 { font-size: 2rem; line-height: 1.1; margin: 0.4rem 0 0.8rem; }
+.xr-landing p { color: var(--muted); line-height: 1.5; }
+
+.xr-checks { list-style: none; padding: 0; margin: 1.2rem 0; font-size: 0.9rem; }
+.xr-checks li { padding: 0.25rem 0; }
+.xr-checks .ok { color: var(--accent); }
+.xr-checks .bad { color: var(--bad); }
+
+.xr-button {
+  width: 100%;
+  padding: 1rem;
+  border: 0;
+  border-radius: 999px;
+  background: var(--accent);
+  color: #111;
+  font: inherit;
+  font-weight: 600;
+}
+.xr-button:disabled { opacity: 0.4; }
+
+.xr-report {
+  margin-top: 1.2rem;
+  padding: 12px;
+  border-radius: 8px;
+  background: #0006;
+  font-size: 0.72rem;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.xr-overlay {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  pointer-events: none;
+}
+
+.xr-hud {
+  margin: max(12px, env(safe-area-inset-top)) 12px 0;
+  padding: 8px 10px;
+  border-radius: 8px;
+  background: #000a;
+  color: var(--ink);
+  font: 11px/1.45 ui-monospace, monospace;
+  white-space: pre-wrap;
+}
+
+.xr-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+  padding: 12px 12px max(16px, env(safe-area-inset-bottom));
+  pointer-events: auto;
+}
+
+.xr-chip {
+  padding: 0.7rem 1rem;
+  border: 1px solid #fff4;
+  border-radius: 999px;
+  background: #000b;
+  color: var(--ink);
+  font: inherit;
+  font-size: 0.85rem;
+}
+
+.xr-button + .xr-button { margin-top: 10px; }
+.xr-button-secondary { background: transparent; color: var(--ink); border: 1px solid #fff5; }
+.xr-note { font-size: 0.8rem; }
+
+.xr-front-stage {
+  position: fixed;
+  inset: 0;
+  background: #000;
+}
+
+/* The front camera is shown mirrored, like a selfie preview; recorded frames stay unmirrored. */
+.xr-front-stage video,
+.xr-front-stage canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scaleX(-1);
+}
